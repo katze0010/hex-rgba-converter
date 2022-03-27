@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hex/RGB Auto Color Converter in Vue</title>
+
+</head>
+
+<body>
+    <main>
+        <form id="app-form" action="" :style="{ borderColor }">
+            <h1>RGB/Hex color converter</h1>
+
+            <div id="value-wrap" class="group">
+                <div>
+                    <input v-model="value" @input="validate" id="value" type="text" placeholder="Any RGB or hex value" />
+                </div>
+            </div>
+
+            <div class="group">
+                <p><strong>Format detected:</strong> {{ fromFormat }}</p>
+                <p><strong>Converting to:</strong> {{ toFormat }}</p>
+            </div>
+
+            <div class="flex">
+                <input ref="output" id="result" tabindex="-1" type="text" :value="convertedValue" />
+            </div>
+        </form>
+        </div>
+    </main>
+    <script src="vue.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

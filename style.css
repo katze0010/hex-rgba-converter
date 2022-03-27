@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-size: 18px;
+  box-sizing: border-box;
+  color: #333;
+  text-align: left;
+}
+
+#app {
+  width: 100%;
+  max-width: 26rem;
+  padding: 4rem 1rem;
+  position: relative;
+  margin: 3rem auto 0;
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+
+    li + li {
+      margin-top: 0.5rem;
+    }
+  }
+
+  #app-form {
+    margin: auto;
+
+    input {
+      padding: 0.75em;
+    }
+
+    #result {
+      border: none;
+      border-radius: 0;
+      padding-left: 0;
+      border-bottom: 2px solid;
+    }
+
+    .flex {
+      display: flex;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+  }
+}
